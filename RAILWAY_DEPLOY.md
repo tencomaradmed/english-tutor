@@ -76,7 +76,15 @@ NODE_ENV=production
 
 ## ✅ Krok 3: Nastavte Frontend
 
-### 3.1 Vytvořte `.env` v `frontend/`
+**Máte dvě možnosti:**
+
+### Možnost A: Frontend na Railway (Doporučeno)
+
+Postupujte podle `RAILWAY_FRONTEND.md` pro nasazení frontendu také na Railway.
+
+### Možnost B: Frontend na FTP
+
+#### 3.1 Vytvořte `.env` v `frontend/`
 
 ```env
 REACT_APP_API_URL=https://your-app.up.railway.app
@@ -84,7 +92,7 @@ REACT_APP_API_URL=https://your-app.up.railway.app
 
 (Nahraďte URL vaší Railway aplikace)
 
-### 3.2 Vytvořte build
+#### 3.2 Vytvořte build
 
 ```bash
 cd frontend
@@ -92,7 +100,7 @@ npm install
 npm run build
 ```
 
-### 3.3 Nahrajte na FTP
+#### 3.3 Nahrajte na FTP
 
 Nahrajte obsah `frontend/build/` na váš FTP server.
 
