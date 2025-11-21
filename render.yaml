@@ -1,0 +1,16 @@
+services:
+  - type: web
+    name: english-tutor-api
+    env: node
+    buildCommand: cd backend && npm install
+    startCommand: cd backend && npm start
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: 3001
+      - key: OPENAI_API_KEY
+        sync: false  # Musíte nastavit ručně v Render dashboardu
+      - key: FRONTEND_URL
+        sync: false  # Musíte nastavit ručně v Render dashboardu
+

@@ -1,0 +1,134 @@
+/* ============================================
+   CSS VARIABLES
+   ============================================ */
+:root {
+  --primary: #667eea;
+  --primary-dark: #5568d3;
+  --secondary: #764ba2;
+  --error: #e74c3c;
+  --success: #28a745;
+  --text-primary: #333;
+  --text-muted: #666;
+  --bg-primary: #ffffff;
+  --bg-secondary: #f8f9fa;
+  --border: #e0e0e0;
+  --shadow-lg: 0 10px 40px rgba(0, 0, 0, 0.1);
+  --shadow-md: 0 5px 20px rgba(102, 126, 234, 0.4);
+  --radius-sm: 10px;
+  --radius-md: 15px;
+  --radius-full: 20px;
+  --transition: all 0.3s ease;
+}
+
+.mistakes-summary {
+  background: var(--bg-primary);
+  border-radius: var(--radius-full);
+  padding: 3rem;
+  box-shadow: var(--shadow-lg);
+  max-width: 900px;
+  width: 100%;
+  max-height: 80vh;
+  overflow-y: auto;
+}
+
+.mistakes-summary h2 {
+  text-align: center;
+  color: var(--primary);
+  margin-bottom: 2rem;
+}
+
+.summary-stats {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.stat-card {
+  background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+  color: white;
+  padding: 2rem;
+  border-radius: var(--radius-md);
+  text-align: center;
+  min-width: 200px;
+}
+
+.stat-card h3 {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+}
+
+.mistakes-by-type {
+  margin-bottom: 2rem;
+}
+
+.mistakes-by-type h3 {
+  color: var(--text-primary);
+  margin-bottom: 1.5rem;
+}
+
+.mistake-type-section {
+  margin-bottom: 2rem;
+}
+
+.mistake-type-section h4 {
+  color: var(--primary);
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
+}
+
+.mistake-item {
+  background: var(--bg-secondary);
+  border-left: 4px solid var(--primary);
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+  border-radius: var(--radius-sm);
+}
+
+.mistake-original {
+  color: var(--error);
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+}
+
+.mistake-corrected {
+  color: var(--success);
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+}
+
+.mistake-explanation {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  padding-top: 0.5rem;
+  border-top: 1px solid var(--border);
+  margin-top: 0.5rem;
+}
+
+.no-mistakes {
+  text-align: center;
+  padding: 3rem;
+}
+
+.no-mistakes h3 {
+  font-size: 2rem;
+  color: var(--success);
+  margin-bottom: 1rem;
+}
+
+.close-button {
+  width: 100%;
+  padding: 1rem 2rem;
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: white;
+  background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+  border: none;
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.close-button:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
