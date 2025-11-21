@@ -57,3 +57,4 @@ Po deploymentu by mělo:
 
 **Hotovo!** 🎉 Všechny dependency konflikty jsou vyřešeny.
 
+

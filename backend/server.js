@@ -25,6 +25,28 @@ const openai = new OpenAI({
   apiKey: process.env.OPENAI_API_KEY
 });
 
+// Root endpoint
+app.get('/', (req, res) => {
+  res.json({ 
+    message: 'English Tutor API',
+    version: '1.0.0',
+    status: 'running',
+    endpoints: {
+      test: '/api/test',
+      startSession: '/api/session/start',
+      sendMessage: '/api/session/message',
+      getSession: '/api/session/:sessionId',
+      getMistakes: '/api/session/:sessionId/mistakes',
+      getUserProfile: '/api/user/:username/profile',
+      getUserLessons: '/api/user/:username/lessons',
+      tts: '/api/tts',
+      translateWord: '/api/translate/word',
+      translateSentence: '/api/translate/sentence',
+      analyzeWords: '/api/analyze/words'
+    }
+  });
+});
+
 app.get('/api/test', (req, res) => {
   res.json({ message: 'Backend funguje!' });
 });
