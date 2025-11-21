@@ -43,7 +43,7 @@ Vyplňte formulář:
 
 - **Name:** `english-tutor-api` (nebo jak chcete)
 - **Environment:** `Node`
-- **Build Command:** `cd backend && npm install`
+- **Build Command:** `cd backend && npm install --legacy-peer-deps`
 - **Start Command:** `cd backend && npm start`
 - **Plan:** Free (nebo Starter pro více zdrojů)
 
