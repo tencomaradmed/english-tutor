@@ -2,6 +2,7 @@ services:
   - type: web
     name: english-tutor-api
     env: node
+    nodeVersion: 20.18.0
     buildCommand: cd backend && npm install --legacy-peer-deps
     startCommand: cd backend && npm start
     envVars:

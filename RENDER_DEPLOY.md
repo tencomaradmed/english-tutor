@@ -43,6 +43,7 @@ Vyplňte formulář:
 
 - **Name:** `english-tutor-api` (nebo jak chcete)
 - **Environment:** `Node`
+- **Node Version:** `20.18.0` (nebo vyšší)
 - **Build Command:** `cd backend && npm install --legacy-peer-deps`
 - **Start Command:** `cd backend && npm start`
 - **Plan:** Free (nebo Starter pro více zdrojů)

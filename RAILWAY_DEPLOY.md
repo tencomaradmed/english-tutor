@@ -42,13 +42,13 @@ git push origin main
 3. Vyberte repo: `tencomaradmed/justenglish`
 4. Railway automaticky detekuje Node.js projekt
 
-### 2.3 Nastavte Root Directory a Build Command
+### 2.3 Nastavte Root Directory a Node.js verzi
 
 1. V projektu klikněte na "Settings"
 2. Najděte "Root Directory"
 3. Nastavte na: `backend`
-4. Najděte "Build Command" (pokud je k dispozici)
-5. Nastavte na: `npm install --legacy-peer-deps`
+4. Najděte "Node Version" nebo "Nixpacks"
+5. Nastavte na: `20.18.0` nebo vyšší (Railway automaticky použije z `package.json` engines)
 6. Uložte
 
 ### 2.4 Nastavte Environment Variables
